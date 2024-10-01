@@ -240,6 +240,7 @@ using namespace std;
 
 int getbit(int n,int i)
 {
+    // (1 << i) is used to shift the bit 1, i.e. ..001 by i times to the left; syntax: (bit_to_shift << number_of_times)
     if((n & (1 << i))!=0)
     return 1;
     else
