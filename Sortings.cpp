@@ -137,8 +137,11 @@ int partition(int a[],int l,int r)
     int i=l-1;
     for(int j=l;j<r;j++)
     {
-        i++;
+         if (arr[j] < pivot) {
+            i++;
         swap(a,i,j);
+        }
+      
     }
     swap(a,i+1,r);
     
